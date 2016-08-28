@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8D8-CK-ORa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8D8-CK-ORa">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -47,13 +47,25 @@
                                     <segue destination="YD5-XF-iZZ" kind="show" id="ycJ-oT-3Xs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOS-wi-hyP">
+                                <rect key="frame" x="215" y="254" width="170" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="qKW-lN-teQ"/>
+                                </constraints>
+                                <state key="normal" title="Path"/>
+                                <connections>
+                                    <segue destination="drb-Gu-cPu" kind="show" id="gI8-2a-MOX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="a0d-5F-8sa" firstAttribute="top" secondItem="pqa-TZ-W0m" secondAttribute="bottom" constant="20" id="5O4-bF-Ase"/>
+                            <constraint firstItem="uOS-wi-hyP" firstAttribute="top" secondItem="a0d-5F-8sa" secondAttribute="bottom" constant="20" id="73c-0S-pG2"/>
                             <constraint firstItem="a0d-5F-8sa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Ev-NJ-nd8"/>
                             <constraint firstItem="rV0-lt-o0U" firstAttribute="top" secondItem="msY-5n-2Hc" secondAttribute="bottom" constant="40" id="An8-0I-nUY"/>
                             <constraint firstItem="pqa-TZ-W0m" firstAttribute="top" secondItem="rV0-lt-o0U" secondAttribute="bottom" constant="20" id="Sdd-No-YN3"/>
+                            <constraint firstItem="uOS-wi-hyP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="avl-wW-SnT"/>
                             <constraint firstItem="rV0-lt-o0U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wnT-dG-SRY"/>
                             <constraint firstItem="pqa-TZ-W0m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z6W-gU-LX0"/>
                         </constraints>
@@ -62,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="-354.99999999999994"/>
+            <point key="canvasLocation" x="943" y="-355"/>
         </scene>
         <!--Hello World View Controller-->
         <scene sceneID="XMk-Fs-39c">
@@ -195,6 +207,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EOC-TT-UdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1666" y="-76"/>
+        </scene>
+        <!--Path Animation View Controller-->
+        <scene sceneID="6Nd-99-lWu">
+            <objects>
+                <viewController id="drb-Gu-cPu" customClass="PathAnimationViewController" customModule="IOSAnimationSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eT5-JO-SAF"/>
+                        <viewControllerLayoutGuide type="bottom" id="dAc-tl-f7l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wo8-uR-v90">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYh-4h-2ba">
+                                <rect key="frame" x="20" y="84" width="560" height="496"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tYh-4h-2ba" secondAttribute="trailing" constant="20" id="QlY-Oc-qBg"/>
+                            <constraint firstItem="tYh-4h-2ba" firstAttribute="top" secondItem="eT5-JO-SAF" secondAttribute="bottom" constant="20" id="Tpo-a0-Wfh"/>
+                            <constraint firstItem="dAc-tl-f7l" firstAttribute="top" secondItem="tYh-4h-2ba" secondAttribute="bottom" constant="20" id="bVP-7t-SmF"/>
+                            <constraint firstItem="tYh-4h-2ba" firstAttribute="leading" secondItem="Wo8-uR-v90" secondAttribute="leading" constant="20" id="okV-va-CKv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="centerView" destination="tYh-4h-2ba" id="dam-n0-Dv4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nw5-Uu-Z1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="450"/>
         </scene>
         <!--Spotify View Controller-->
         <scene sceneID="JZw-Lq-9us">

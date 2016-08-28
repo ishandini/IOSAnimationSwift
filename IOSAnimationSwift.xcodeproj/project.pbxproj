@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		862402581D0D979C00984AFB /* SpotifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862402571D0D979C00984AFB /* SpotifyViewController.swift */; };
 		8624025A1D0E66FC00984AFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862402591D0E66FC00984AFB /* LoginViewController.swift */; };
+		86CE35C51D73426600E7C209 /* PathAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE35C41D73426600E7C209 /* PathAnimationViewController.swift */; };
 		86F0602B1D0C2A900088F4A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F0602A1D0C2A900088F4A9 /* AppDelegate.swift */; };
 		86F060301D0C2A900088F4A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F0602E1D0C2A900088F4A9 /* Main.storyboard */; };
 		86F060321D0C2A900088F4A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F060311D0C2A900088F4A9 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		862402571D0D979C00984AFB /* SpotifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpotifyViewController.swift; path = Spotify/SpotifyViewController.swift; sourceTree = "<group>"; };
 		862402591D0E66FC00984AFB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Spotify/LoginViewController.swift; sourceTree = "<group>"; };
+		86CE35C41D73426600E7C209 /* PathAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathAnimationViewController.swift; sourceTree = "<group>"; };
 		86F060271D0C2A900088F4A9 /* IOSAnimationSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSAnimationSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F0602A1D0C2A900088F4A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86F0602F1D0C2A900088F4A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				86F060411D0C56850088F4A9 /* RandomQuote */,
 				86F0603E1D0C2B4D0088F4A9 /* HelloWorld */,
 				86F0602A1D0C2A900088F4A9 /* AppDelegate.swift */,
+				86CE35C41D73426600E7C209 /* PathAnimationViewController.swift */,
 				86F060441D0C69F60088F4A9 /* DataService.swift */,
 				86F0603C1D0C2AED0088F4A9 /* HomeViewController.swift */,
 				86F0602E1D0C2A900088F4A9 /* Main.storyboard */,
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86CE35C51D73426600E7C209 /* PathAnimationViewController.swift in Sources */,
 				8624025A1D0E66FC00984AFB /* LoginViewController.swift in Sources */,
 				86F060451D0C69F60088F4A9 /* DataService.swift in Sources */,
 				86F0602B1D0C2A900088F4A9 /* AppDelegate.swift in Sources */,
